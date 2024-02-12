@@ -1,7 +1,7 @@
 body {
     font-family: Helvetica, sans-serif;
-    color: #EAE8FF;
-    background: #2D3142;
+    color: #353535;
+    background: #353535;
     padding: 0 40px;
     text-align: center;
 }
@@ -34,8 +34,9 @@ nav ul li a {
 }
 
 h1 {
-    font-size: 8em;
+    font-size: 6em;
     letter-spacing: -2px;
+    text-align: left;
 }
 
 h1 strong {
@@ -48,3 +49,62 @@ h1 strong {
 img.about {
     opacity: 0.5;
 }
+
+
+
+
+
+
+
+
+  /* Shared class for common styling properties */
+  .grid-item {
+    background-color: #b5b5b5; /* Background color */
+    padding: 40px; /* Padding to create space inside the box */
+    border-radius: 10px; /* Rounded corners */
+    margin: 20px; /* Space between items */
+    
+    display: flex; /* Use flexbox to center content */
+    flex-direction: column;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+  }
+
+  /* Specific styling for each grid item */
+  .item1 { grid-area: sun; }
+  .item2 { grid-area: mercury; }
+  .item3 { grid-area: venus; }
+  .item4 { grid-area: earth; }
+  .item5 { grid-area: mars; }
+  .item6 { grid-area: jupiter; }
+  .item7 { grid-area: saturn; }
+  .item8 { grid-area: uranus; }
+  .item9 { grid-area: neptune; }
+
+  .parent {
+    display: grid;
+    grid-template-areas: 
+      'sun mercury venus earth mars'
+      'sun jupiter saturn uranus neptune'; /* Define sun to span two rows */
+    gap: 20px; /* Gap between grid items */
+  }
+
+  span{
+    height: 100px;
+    width: 100px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .Sun{
+    height: 200px;
+    width: 200px;
+    background-color: #d1a339;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+
+
+  

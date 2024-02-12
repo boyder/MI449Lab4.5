@@ -1,7 +1,20 @@
 ---
 layout: layout.liquid
-title: 11ty Boilerplate
+title: Playing Cards
 ---
 
-<h1>Yet Another 11ty <strong>Boilerplate</strong></h1>
-<img alt="pine" src="/images/pine.png" width="50" />
+<h1>Planetary Playing Cards</h1>
+
+
+
+<div class="parent">
+  <div class="grid-item item1">{% card "Sun", "Type G2V" %}</div>
+  <div class="grid-item item2">{% card "Mercury", "0.4 AU" %}</div>
+  <div class="grid-item item3">{% card "Venus", "0.72 AU" %}</div>  
+  <div class="grid-item item4">{% card "Earth", "1 AU" %}</div>
+  <div class="grid-item item5">{% card "Mars", "1.52 AU" %}</div>
+  <div class="grid-item item6">{% card "Jupiter", "5.2 AU" %}</div>
+  <div class="grid-item item7">{% card "Saturn", "9.5 AU" %}</div>
+  <div class="grid-item item8">{% card "Uranus", "19.8 AU" %}</div>
+  <div class="grid-item item9">{% card "Neptune", "30 AU" %}</div>
+</div>
