@@ -40,12 +40,7 @@ h1 {
     color: #EAE8FF;
 }
 
-h1 strong {
-    background: rgb(34,193,195);
-    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+
 
 img.about {
     opacity: 0.5;
@@ -60,12 +55,11 @@ img.about {
 
   /* Shared class for common styling properties */
   .grid-item {
-    background-color: #b5b5b5; /* Background color */
-    padding: 40px; /* Padding to create space inside the box */
-    border-radius: 10px; /* Rounded corners */
-    margin: 20px; /* Space between items */
-    
-    display: flex; /* Use flexbox to center content */
+    background-color: #b5b5b5; 
+    padding: 40px; 
+    border-radius: 10px; 
+    margin: 20px; 
+    display: flex; 
     flex-direction: column;
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically */
@@ -90,6 +84,13 @@ img.about {
     gap: 20px; /* Gap between grid items */
   }
 
+  .grid-item:hover{
+    background-color: #353535;
+    color: #b5b5b5;
+
+    outline: #b5b5b5 solid 10px;
+  }
+
   span{
     height: 100px;
     width: 100px;
@@ -98,12 +99,11 @@ img.about {
     display: inline-block;
   }
 
+
   .Sun{
     height: 200px;
     width: 200px;
     background-color: #d1a339;
-    border-radius: 50%;
-    display: inline-block;
   }
 
   .Venus{
@@ -132,4 +132,8 @@ img.about {
 
 .Neptune{
   background-color: #436aff;
+}
+
+.grid-item1{
+  outline: #d1a339;
 }
