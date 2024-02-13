@@ -37,6 +37,7 @@ h1 {
     font-size: 6em;
     letter-spacing: -2px;
     text-align: left;
+    color: #EAE8FF;
 }
 
 h1 strong {
@@ -105,6 +106,30 @@ img.about {
     display: inline-block;
   }
 
+  .Venus{
+    background-color: #a8a566;
+  }
 
+  .Earth{
+    background-color: #0b640d;
+  }
 
-  
+  .Mars{
+    background-color: #66200b;
+  }
+
+  .Jupiter{
+    background-color: #441f14;
+  }
+
+.Saturn{
+  background-color: #074455;
+}
+
+.Uranus{
+  background-color: #b9dfe2;
+}
+
+.Neptune{
+  background-color: #436aff;
+}
